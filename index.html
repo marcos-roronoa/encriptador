@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Encriptador</h1>
+    </header>
+
+    
+    <textarea name="texto" class="texto" id="texto" cols="50" rows="30" placeholder=" Ingrese el texto aqui"></textarea>
+    <textarea name="resultado" class="resultado" id="resultado" cols="50" rows="30" placeholder=" Resultado"></textarea>
+
+
+    <footer>
+
+            <button onclick="encriptar();" id="Enc_tex" class="Encriptar" name="Enc_tex">Encriptar</button>
+            <button onclick="desencriptar();" class="Desencriptar">Desencriptar</button>
+            <button onclick="Copiar();" class="Copiar">Copiar</button>
+        
+    </footer>
+
+
+
+    <script src="app.js" defer></script>
+</body>
+</html>

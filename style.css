@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: beige;
+}
+
+.titulo{
+    font-family: "Krona One";
+    font-size: 35px;
+    color: #244cca;
+}
+
+.cuadros{
+    color: black;
+    font-size: 20px;
+    font-family:"Krona One";
+}
+
+
+
+
+.Encriptar{
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.Desencriptar{
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.Copiar{
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.1s;
+    position: absolute;
+    right: 850px;
+    
+}
