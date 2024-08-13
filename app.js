@@ -10,7 +10,7 @@ function encriptar(){
         if(texto.length === 0 || /[A-Z]/.test(texto) || /[^a-zA-Z0-9\s]/.test(texto)){
 			swal("Debes escribir un texto para encriptar , evitar mayusculas o caracteres especiales")
         }else{
-			let resultado = texto_cifrado;
+	    let resultado = texto_cifrado;
             let textarea_resultado = document.getElementById("resultado");
             textarea_resultado.value = resultado;
 
@@ -30,7 +30,7 @@ function desencriptar(){
         if(texto.length === 0 || /[A-Z]/.test(texto) || /[^a-zA-Z0-9\s]/.test(texto)){
 			swal("Debes escribir un texto para encriptar , evitar mayusculas o caracteres especiales")
         }else{
-			let resultado = texto_cifrado;
+	    let resultado = texto_cifrado;
             let textarea_resultado = document.getElementById("resultado");
             textarea_resultado.value = resultado;
 
