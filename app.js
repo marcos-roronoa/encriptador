@@ -7,12 +7,12 @@ function encriptar(){
         .replace(/o/gi, "ober")
         .replace(/u/gi, "ufat");
 
-        if(texto.length != 0){
-            let resultado = texto_cifrado;
+        if(texto.length === 0 || /[A-Z]/.test(texto) || /[^a-zA-Z0-9\s]/.test(texto)){
+			swal("Debes escribir un texto para encriptar , evitar mayusculas o caracteres especiales")
+        }else{
+			let resultado = texto_cifrado;
             let textarea_resultado = document.getElementById("resultado");
             textarea_resultado.value = resultado;
-        }else{
-            swal("Debes escribir un texto para encriptar");
 
         }
 }
@@ -27,12 +27,14 @@ function desencriptar(){
         .replace(/ober/gi, "o")
         .replace(/ufat/gi, "u");
 
-        if(texto.length != 0){
-            let resultado = texto_cifrado;
+        if(texto.length === 0 || /[A-Z]/.test(texto) || /[^a-zA-Z0-9\s]/.test(texto)){
+			swal("Debes escribir un texto para encriptar , evitar mayusculas o caracteres especiales")
+        }else{
+			let resultado = texto_cifrado;
             let textarea_resultado = document.getElementById("resultado");
             textarea_resultado.value = resultado;
-        }else{
-            swal("Debes escribir un texto para desencriptar");
+
+        }
 
         }
 }
